@@ -1,0 +1,180 @@
+@font-face {
+    font-family: "kajiro" ;
+    src: url(Kajiro\ Bold.woff2);
+}
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: "gillroy";
+
+}
+
+html,
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+#main-div {
+    width: 100%;
+    height: 100%;
+}
+
+.back {
+    width: 100%;
+    height: 100vh;
+    background-color: red;
+    
+}
+
+.back img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    
+}
+
+#top {
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0%;
+    left: 0%;
+}
+
+.working-area {
+    position: relative;
+    width: 80%;
+    height: 100%;
+    min-width: 1440PX;
+    height: 100%;
+    margin: 0 auto;
+    color: white;
+    /* background-color: red; */
+
+}
+
+/* Nav Ka Kaam Yahan Se Shuru Hai */
+.nav {
+
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0%;
+
+}
+
+.nav-left,
+.nav-right {
+    text-decoration: none;
+    display: flex;
+    text-align: center;
+    gap: 40px;
+
+}
+
+.nav-left img {
+    height: 60px;
+}
+
+.nav-left a,
+.nav-right a {
+     pointer-events: all; 
+    color: white;
+    text-decoration: none;
+    font-family: "gilroy";
+}
+
+.nav-left a {
+    padding: 20px;
+}
+
+.nav-right a {
+    color: white;
+}
+
+/* Nav ka Kaam Yahan Khatam Ho Gya Hai  */
+
+/* Yahan se kaam hai main box ka */
+
+#hero {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(-0%, -50%);
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    /* background-color: red;  */
+}
+
+.hero-left {
+
+    min-width: 50%;
+}
+
+.hero-left .elem {
+    height: 8vw;
+     position: relative;
+      overflow: hidden; 
+} 
+.hero-left .elem h1:nth-child(1){
+    top: 0;
+}
+
+.hero-left .elem h1 {
+     position: absolute;
+     top: 100%;
+     left: 0;
+    color: rgb(255, 255, 255);
+    font-family: "kajiro";
+    font-size: 10vw;
+    font-weight: 200;
+    line-height: .9;
+
+}
+
+.hero-left button {
+    pointer-events: all; 
+    font-family: "kajiro";
+    font-size: 4vw;
+    padding: .8vw 3vw;
+    margin-top: 2vw;
+
+}
+
+.hero-right {
+    width: 17%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+
+}
+
+.hero-right p {
+    font-size: 15px;
+    font-weight: 300;
+    text-align: right;
+}
+
+.hero-right .imgdiv {
+    width: 100%;
+    height: 170px;
+    background-color: yellow;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background-image: url(https://media.istockphoto.com/id/1509516502/photo/happy-asian-girl-holding-package-parcel-box-open-isolated-on-pink-background-delivery-courier.jpg?s=2048x2048&w=is&k=20&c=zUGDccr7LWyHyV8BW57DTo8tOVfDs_xrHg1xGdPfpOg=);
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-right p:nth-child(3) {
+
+    margin-bottom: 100px;
+}
